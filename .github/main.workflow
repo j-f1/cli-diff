@@ -13,6 +13,7 @@ action "Install Dependencies" {
 
 action "Build" {
   uses = "CultureHQ/actions-yarn@master"
+  needs = ["Install Dependencies"]
   args = ["build"]
 }
 
