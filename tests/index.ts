@@ -59,6 +59,7 @@ describe('diff', () => {
   })
   it('works with ANSI enabled', () => {
     chalk.enabled = true
+    chalk.level = 1
     expect(ansi(diff(left, right))).toMatchInlineSnapshot(`
 "^[[2m^[[34m@@ -1,4 +1,5 @@^[[39m^[[22m
  line1
