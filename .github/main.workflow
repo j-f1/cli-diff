@@ -2,7 +2,7 @@ workflow "Run tests" {
   on = "push"
   resolves = [
     "Test",
-    "Lint",
+    "Prettier",
   ]
 }
 
