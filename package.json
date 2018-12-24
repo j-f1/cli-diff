@@ -22,6 +22,9 @@
     "chalk": "^2.4.1",
     "diff": "^3.5.0"
   },
+  "engines": {
+    "node": ">=6"
+  },
   "devDependencies": {
     "@types/dedent": "^0.7.0",
     "@types/diff": "^3.5.2",
