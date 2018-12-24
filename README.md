@@ -4,6 +4,7 @@
 [![MIT Licensed](https://img.shields.io/github/license/j-f1/cli-diff.svg?style=flat-square)](https://github.com/j-f1/cli-diff/blob/master/LICENSE)
 [![Supported Node versions](https://img.shields.io/node/v/cli-diff.svg?style=flat-square)](https://npmjs.com/package/cli-diff)
 [![Build status](https://img.shields.io/travis/com/j-f1/cli-diff/master.svg?style=flat-square)](https://travis-ci.com/j-f1/cli-diff)
+[![Coverage via Codecov](https://img.shields.io/codecov/c/github/j-f1/cli-diff/master.svg?style=flat-square)](https://codecov.io/gh/j-f1/cli-diff)
 ![types: TypeScript](https://img.shields.io/npm/types/cli-diff.svg?style=flat-square)
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
