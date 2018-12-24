@@ -11,7 +11,7 @@
     "dist/"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p .",
     "prettier": "prettier --ignore-path .gitignore **/*.{ts,json,md,yml}",
     "lint": "yarn prettier --check",
     "fix": "yarn prettier --write",

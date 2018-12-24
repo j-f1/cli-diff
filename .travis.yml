@@ -24,4 +24,5 @@ script:
   - if [ "${JOB}" = "lint" ]; then yarn lint; fi
   - if [ "${JOB}" = "test" ]; then yarn build --sourcemap; fi
   - if [ "${JOB}" = "test" ]; then yarn test --ci; fi
-  - if [ "${JOB}" = "test" ]; then codecov --disable=gcov; fi
+after_success:
+  - if [ "${JOB}" = "test" ]; then codecov -f coverage/*.json; fi
