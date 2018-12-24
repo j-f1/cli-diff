@@ -1,7 +1,7 @@
 {
   "name": "cli-diff",
   "version": "1.0.0",
-  "description": "A diff utility with colored output for CLIs",
+  "description": "A diff utility with highlighted output for CLIs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": "https://github.com/j-f1/cli-diff",
