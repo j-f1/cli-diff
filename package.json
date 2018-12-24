@@ -1,0 +1,25 @@
+{
+  "name": "cli-diff",
+  "version": "1.0.0",
+  "description": "A diff utility with colored output for CLIs",
+  "main": "index.js",
+  "repository": "https://github.com/j-f1/cli-diff",
+  "author": "Jed Fox <git@twopointzero.us>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "prettier": "prettier --ignore-path .gitignore **/*.{ts,json,md,yml}",
+    "lint": "yarn prettier --check",
+    "fix": "yarn prettier --write"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "diff": "^3.5.0"
+  },
+  "devDependencies": {
+    "@types/diff": "^3.5.2",
+    "prettier": "prettier/prettier",
+    "typescript": "^3.2.2"
+  },
+  "$schema": "http://json.schemastore.org/package.json"
+}
