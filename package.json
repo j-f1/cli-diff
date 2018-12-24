@@ -2,10 +2,14 @@
   "name": "cli-diff",
   "version": "1.0.0",
   "description": "A diff utility with colored output for CLIs",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/j-f1/cli-diff",
   "author": "Jed Fox <git@twopointzero.us>",
   "license": "MIT",
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "build": "tsc",
     "prettier": "prettier --ignore-path .gitignore **/*.{ts,json,md,yml}",
