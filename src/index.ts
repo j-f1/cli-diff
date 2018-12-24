@@ -1,5 +1,5 @@
 import chalk from 'chalk'
-import JSDiff from 'diff'
+import JSDiff = require('diff')
 
 export interface File {
   name?: string
@@ -55,6 +55,9 @@ export default function diff(
             return chalk.red(chunk)
           case '@':
             return chalk.dim.blue(chunk)
+          // \ No newline at end of file
+          case '\\':
+            return chalk.dim.yellow(chunk)
           default:
             return chunk
         }

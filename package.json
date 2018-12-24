@@ -10,15 +10,22 @@
     "build": "tsc",
     "prettier": "prettier --ignore-path .gitignore **/*.{ts,json,md,yml}",
     "lint": "yarn prettier --check",
-    "fix": "yarn prettier --write"
+    "fix": "yarn prettier --write",
+    "test": "jest",
+    "coverage": "yarn test --collectCoverage"
   },
   "dependencies": {
     "chalk": "^2.4.1",
     "diff": "^3.5.0"
   },
   "devDependencies": {
+    "@types/dedent": "^0.7.0",
     "@types/diff": "^3.5.2",
+    "@types/jest": "^23.3.10",
+    "dedent": "^0.7.0",
+    "jest": "^23.6.0",
     "prettier": "prettier/prettier",
+    "ts-jest": "^23.10.5",
     "typescript": "^3.2.2"
   },
   "$schema": "http://json.schemastore.org/package.json"
