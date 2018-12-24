@@ -1,0 +1,27 @@
+language: node_js
+node_js:
+  - node
+  - 8
+  - 6
+env:
+  matrix:
+    - JOB=test
+matrix:
+  fast_finish: true
+  include:
+    - node_js: 'node'
+      env: JOB=lint
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+install:
+  - yarn
+  - yarn global add codecov
+script:
+  - if [ "${JOB}" = "lint" ]; then yarn lint; fi
+  - if [ "${JOB}" = "test" ]; then yarn build --sourcemap; fi
+  - if [ "${JOB}" = "test" ]; then yarn test --ci; fi
+  - if [ "${JOB}" = "test" ]; then codecov; fi
