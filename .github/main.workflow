@@ -11,6 +11,12 @@ action "Install Dependencies" {
   args = ["install"]
 }
 
+action "Prettier" {
+  uses = "CultureHQ/actions-yarn@master"
+  needs = ["Install Dependencies"]
+  args = ["lint"]
+}
+
 action "Build" {
   uses = "CultureHQ/actions-yarn@master"
   needs = ["Install Dependencies"]
@@ -21,10 +27,4 @@ action "Test" {
   uses = "CultureHQ/actions-yarn@master"
   needs = ["Build"]
   args = ["coverage"]
-}
-
-action "Lint" {
-  uses = "CultureHQ/actions-yarn@master"
-  needs = ["Build"]
-  args = ["lint"]
 }
